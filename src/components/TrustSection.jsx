@@ -72,6 +72,14 @@ const reviews = [
         text: `Booking with Mymore Travels was the best decision. Their customer support was responsive and the hotel deal we got in Dubai was unbeatable. Highly recommend for anyone planning a getaway!`,
         image: '/images/dubai.jpg',
     },
+    {
+        id: 4,
+        name: 'Nathan Adebayo',
+        location: 'Abuja, Nigeria',
+        avatar: 'https://i.pravatar.cc/48?img=5',
+        text: `Mymore Travels made my honeymoon stress-free and unforgettable! From flights to hotel bookings, everything was perfectly arranged. We'll definitely be booking our next trip with them.`,
+        image: '/images/honeymoon.jpg',
+    },
     // Add more reviews as needed
 ];
 
@@ -111,7 +119,7 @@ export default function TrustSection() {
             </section>
             <section className="bg-hotelBig text-white">
                 {/* Hero Sub-section */}
-                <div className="w-full bg-[rgb(0,0,0,0.4)] h-[350px] py-16 mx-auto px-24 mb-12 flex flex-col lg:flex-row items-center">
+                <div className="w-full bg-[rgb(0,0,0,0.4)] h-fit md:h-[350px] py-16 mx-auto px-6 md:px-24 mb-12 flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/3 text-white !space-y-4">
                         <h2 className="text-3xl font-bold">Book Quality Hotels at the Best Rates</h2>
                         <p className="text-gray-300">
@@ -123,7 +131,7 @@ export default function TrustSection() {
                 {/* Grid of hotel cards */}
 
             </section>
-            <div className="w-full mx-auto px-24 pb-16">
+            <div className="w-full mx-auto px-6 md:px-24 pb-16">
                 <h3 className="text-white text-3xl font-semibold !mb-8">Handpicked hotel deals in top cities around the world.</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-x-14 !gap-y-8">
                     {hotels.map((hotel, idx) => (
@@ -140,7 +148,7 @@ export default function TrustSection() {
             </div>
             <section className="bg-romance text-white">
                 {/* Hero Sub-section */}
-                <div className="w-full bg-[rgb(0,0,0,0.5)] h-[350px] py-16 mx-auto px-24 mb-12 flex flex-col lg:flex-row items-center">
+                <div className="w-full bg-[rgb(0,0,0,0.5)] h-fit md:h-[350px] py-16 mx-auto px-6 md:px-24 mb-12 flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/3 text-white !space-y-4">
                         <h2 className="text-3xl font-bold">Discover Tailored Tour Packages for Every Traveler</h2>
                         <p className="text-gray-300">
@@ -151,7 +159,7 @@ export default function TrustSection() {
                 {/* Grid of hotel cards */}
 
             </section>
-            <div className="grid grid-cols-4 grid-rows-2 px-24 py-10 gap-12 bg-[#0A0A0A]">
+            <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 px-6 md:px-24 py-10 gap-2 md:gap-12 bg-[#0A0A0A]">
                 {/* 1st image: spans cols 1–2 on row 1 */}
                 <div className="col-span-2">
                     <img src={london} alt="" className="w-full h-auto object-cover" />
@@ -172,9 +180,9 @@ export default function TrustSection() {
                     <img src={thailand} alt="" className="w-full h-auto object-cover" />
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#100E0E] text-white p-6 px-24 relative">
+            <div className="flex flex-col-reverse md:flex-row items-center text-white p-6 px-6 md:px-24 relative mb-170 md:mb-0">
                 {/* Left Image & Pagination Controls */}
-                <div className="md:w-[50%] pb-18 h-[650px] w-full mb-8 md:mb-0 relative">
+                <div className="md:w-[50%] pb-18 h-[300px] md:h-[650px] w-full mb-8 md:mb-0 relative hidden md:block">
                     <img
                         src={sunset}
                         alt="Customer Review"
@@ -199,25 +207,42 @@ export default function TrustSection() {
                 </div>
 
                 {/* Right Reviews Section */}
-                <div className="md:w-1/2 w-full pl-0 md:pl-12 !-mt-90">
-                    <h2 className="text-3xl text-[#D9D9D9] font-normal pl-20 !mb-20">What Our Customers Say <br /> About Us</h2>
-                    <div className=" flex p-5 gap-5 !space-y-6 absolute bg-[#605F5F80] left-[40%] w-[50%]">
+                <div className="md:w-1/2 w-full pl-0 md:pl-12 md:!-mt-90 relative">
+                    <h2 className="text-3xl text-[#D9D9D9] font-normal md:pl-20 !mb-10 md:!mb-20 md:max-w-[60%]">What Our Customers Say About Us</h2>
+                    <div className="flex flex-col md:flex-row p-2 pb-2 gap-3 md:p-5 md:gap-5 !space-y-6 absolute bg-[#605F5F80] left-0 md:-left-40 w-full md:w-[100%]">
                         {currentReviews.map((r) => (
-                            <div key={r.id} className="bg-[#100E0E] px-6 py-12 md:h-[350px] !space-y-5">
-                                <div className="text-5xl mb-4">
+                            <div key={r.id} className="px-4 md:px-6 py-6 h-fit bg-[#000000] md:py-12 md:h-[400px] !space-y-2 md:!space-y-5">
+                                <div className="text-5xl">
                                     &ldquo;
                                 </div>
                                 <p className="text-gray-100 -mt-3 font-light leading-relaxed">{r.text}</p>
                                 <div className="flex items-center">
                                     <img src={r.avatar} alt={r.name} className="h-12 w-12 rounded-full mr-4" />
                                     <div>
-                                        <p className="font-medium">{r.name}</p>
+                                        <p className="font-medium text-nowrap">{r.name}</p>
                                         <p className="text-gray-400 text-sm">{r.location}</p>
                                     </div>
                                 </div>
                             </div>
                         ))}
+                        <div className="absolute left-24 -bottom-16 transform -translate-x-1/2 flex space-x-7 md:hidden">
+                            <img
+                                src={leftBtn}
+                                onClick={handlePrev}
+                                disabled={page === 0}
+                                className="cursor-pointer bg-[#605F5F80] px-7 py-3 rounded-[10px]"
+
+                            />
+                            <img
+                                src={rightBtn}
+                                onClick={handleNext}
+                                disabled={page === totalPages - 1}
+                                className="cursor-pointer bg-[#605F5F80] px-7 py-3 rounded-[10px]"
+
+                            />
+                        </div>
                     </div>
+
                 </div>
             </div>
 

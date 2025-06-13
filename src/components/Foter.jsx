@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* Links columns */}
-        <div className="flex flex-col sm:flex-row sm:space-x-16 md:space-x-20 md:w-1/3 text-white !font-bold">
+        <div className="flex flex-row space-x-16 md:space-x-20 md:w-1/3 text-white !font-bold">
           <div className="mb-8 sm:mb-0">
             <h3 className=" !mb-4">Company</h3>
             <ul className="!space-y-2 text-[#ffffff]text-sm font-bold">

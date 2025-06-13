@@ -1,9 +1,10 @@
 import storyImg from '../assets/storyMan.svg';
-import patner1 from '../assets/patner1.png';
-import patner2 from '../assets/patner2.png';
-import patner3 from '../assets/patner3.png';
-import patner4 from '../assets/patner4.png';
-import patner5 from '../assets/patner5.png';
+import patner1 from '../assets/p1.svg';
+import patner2 from '../assets/p2.png';
+import patner3 from '../assets/p3.png';
+import patner4 from '../assets/p4.png';
+import patner5 from '../assets/p5.png';
+import patner6 from '../assets/p6.png';
 import girl from '../assets/aboutbottom.svg';
 import offer1 from '../assets/offer1.png'
 import offer2 from '../assets/offer2.png'
@@ -37,10 +38,10 @@ const team = [
 export default function AboutBody() {
     return (
         <div>
-            <section className='px-24 py-10 pb-20 bg-[#F0EFE7]'>
+            <section className='px-8 md:px-24 py-10 pb-20 bg-[#F0EFE7]'>
                 <h1 className='text-[#780000] text-xl text-center !mb-6 font-bold'>Our Story</h1>
-                <div className='flex justify-center gap-30'>
-                    <div className="relative w-[30%]">
+                <div className='flex flex-col md:flex-row justify-center gap-30'>
+                    <div className="relative w-[95%] mx-auto md:w-[30%]">
                         {/* Top-right gradient “L” */}
                         <div className="absolute -top-5.5 -right-5.5 w-30 h-30 pointer-events-none">
                             {/* gradient top edge */}
@@ -80,40 +81,33 @@ export default function AboutBody() {
                         <br /><br />Furthermore, we embrace consolidations, affiliations and partnerships of high standing within the country and globally, wholly focused on satisfying every traveler’s need with a one-stop booking portal for affordable flights, hotels, visa assistance, Holiday packages and tours, airport transfers, an international travel SIM, a prepaid travel card, a loyalty program, and much more.</p>
                         </div>
             </section>
-                        <section className='py-10'>
-                            <p className='text-[#D9D9D9] text-[18px] font-semibold md:pl-24 !mb-5'>We trusted by Global Partners</p>
-                            <div className='flex w-full'>
-                                <div className='flex w-full justify-between items-center px-3'>
-                                    <div className='max-w-[150px] h-auto'>
-                                        <img src={patner1} alt="" />
-                                    </div>
-                                    <div className='max-w-[150px] h-auto'>
-                                        <img src={patner2} alt="" />
-                                    </div>
-                                    <div className='max-w-[150px] h-auto'>
-                                        <img src={patner3} alt="" />
-                                    </div>
-                                    <div className='max-w-[150px] h-auto'>
-                                        <img src={patner4} alt="" />
-                                    </div>
-                                    <div className='max-w-[150px] h-auto'>
-                                        <img src={patner5} alt="" />
-                                    </div>
+                        <section className='py-10 px-8 md:px-0 bg-white'>
+                            <p className='text-[#000000] text-[20px] font-bold md:pl-24 !mb-5'>We trusted by Global Partners</p>
+                            <div className="overflow-hidden w-full bg-white py-4">
+                                <div className="scroll-x-animation items-center space-x-14">
+                                    {[...Array(3)].flatMap(() =>
+                                        [patner1, patner2, patner3, patner4, patner5, patner6].map((src, index) => (
+                                            <div key={index + src} className="max-w-[130px] h-auto shrink-0">
+                                                <img src={src} alt={`partner-${index}`} className="w-full h-auto object-contain" />
+                                            </div>
+                                        ))
+                                    )}
                                 </div>
                             </div>
+
                         </section>
                         <div className='w-full'>
                             <img src={girl} alt="" className='w-full' />
                         </div>
                         <section className="w-full mx-auto py-12 space-y-16">
                             {/* What We Offer */}
-                            <div className='px-24'>
+                            <div className='px-8 md:px-24'>
                                 <h2 className="text-2xl font-semibold text-white !mb-6">What We Offer</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
                                     {services.map(service => (
                                         <div
                                             key={service.id}
-                                            className={`${service.bg} ${service.colSpan} ${service.rowSpan} ${service.colSpan === 'col-span-2'? 'px-12' : 'px-6'} py-6 flex ${service.flex === true? "flex-row-reverse items-end" : "flex-col items-center"} justify-between`}
+                                            className={`${service.bg} ${service.colSpan} ${service.rowSpan} ${service.colSpan === 'col-span-2' ? 'px-12' : 'px-6'} py-6 flex ${service.flex === true ? "flex-row-reverse items-end" : "flex-col items-center"} justify-between`}
                                         >
                                             <div className={`${service.icon === offer5 ? 'w-40' : 'w-20'}`}>
                                                 <img src={service.icon} alt={service.title} className="mb-4 w-full" />
@@ -127,9 +121,9 @@ export default function AboutBody() {
                             </div>
 
                             {/* Meet the Team */}
-                            <div className='bg-[#F0EFE7] px-24 py-20'>
+                            <div className='bg-[#F0EFE7] px-8 md:px-24 py-20'>
                                 <h2 className="text-2xl font-semibold text-[#780000] !mb-2">Meet the Team</h2>
-                                <p className="text-[#383737] !mb-8 max-w-[60%]">
+                                <p className="text-[#383737] !mb-8 md:max-w-[60%]">
                                     A passionate team of travel enthusiasts, tech experts, and customer care professionals dedicated to making your travel dreams come true.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

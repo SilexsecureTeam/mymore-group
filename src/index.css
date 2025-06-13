@@ -110,3 +110,20 @@ select, select:focus, select:focus-visible{
 .mobileOnly {
   display: none;
 }
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-x-animation {
+  display: flex;
+  gap: 2.5rem; /* same as Tailwind's gap-10 */
+  width: max-content;
+  animation: scrollX 30s linear infinite;
+}
+

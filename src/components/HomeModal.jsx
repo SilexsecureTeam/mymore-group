@@ -25,8 +25,8 @@ export default function HomeModal({ onClose }) {
                 </p>
 
                 {/* Action button */}
-                <div class="hidden cursor-pointer md:block bg-gradient-to-r to-[#D9D9D9] w-fit mx-auto from-[#780000] p-[1px] rounded hover:bg-gradient-to-l">
-                    <div class="bg-black px-6 py-2 rounded font-medium">Book Flight Now</div>
+                <div class="cursor-pointer bg-gradient-to-r to-[#D9D9D9] w-fit mx-auto from-[#780000] p-[1px] rounded hover:bg-gradient-to-l">
+                    <div class="bg-black px-6 py-2 rounded font-medium"><a target='_blank' href="https://flightandticketing.com/">Book Flight Now</a></div>
                 </div>
             </div>
         </div>
