@@ -100,10 +100,28 @@ select, select:focus, select:focus-visible{
   background-position: center;  /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
+.bg-heroservice{
+  background-image: url('./assets/services.jpg');
+  background-size: cover;  /* Ensures the image covers the entire element */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+}
+.bg-herocareer{
+  background-image: url('./assets/career.jpg');
+  background-size: cover;  /* Ensures the image covers the entire element */
+  background-position: center top;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+}
 .bg-romance{
   background-image: url('./assets/romance.jpg');
   background-size: cover;  /* Ensures the image covers the entire element */
   background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+}
+.bg-table{
+  background-image: url('./assets/bg-table.jpg');
+  background-size: cover;  /* Ensures the image covers the entire element */
+  background-position: center bottom;  /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
 

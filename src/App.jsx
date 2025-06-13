@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import './index.css';
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Services from "./pages/Services";
+import Career from "./pages/Career";
 
 // ScrollToTop logic directly in App.jsx
 function ScrollToTop() {
@@ -26,6 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
     </Router>
   );

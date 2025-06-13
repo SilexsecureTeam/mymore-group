@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="mb-8 sm:mb-0">
             <h3 className=" !mb-4">Company</h3>
             <ul className="!space-y-2 text-[#ffffff]text-sm font-bold">
-              <li><a href="#" className="hover:text-white !font-bold">Careers</a></li>
+              <li><a href="/career" className="hover:text-white !font-bold">Careers</a></li>
               <li><a href="#" className="hover:text-white !font-bold">FAQs</a></li>
               <li><a href="#" className="hover:text-white !font-bold">Privacy Policy</a></li>
             </ul>
