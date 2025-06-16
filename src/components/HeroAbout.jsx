@@ -10,7 +10,7 @@ export default function AboutHero() {
         <div className="!space-y-4">
           <h1 className="text-5xl font-semibold">Who We Are</h1>
           <p className="text-gray-300 md:max-w-[35%]">
-          With a rare taste for excellence  and an Msc degree in  Air Transport Management (Mgt ) Ahmed Akande the C.E.O of My More Travels has  set a record for seamless, affordable and unforgettable trips ,from flights  to private jets,visa help to travel insurance,we have got every aspect of your journey covered.</p>
+          At Mymore Travels, we make your journey seamless, affordable, and unforgettable. From flights to private jets, visa help to travel insurance we’ve got every aspect of your trip covered.</p>
           <a
             href="#"
             className="inline-block mt-4 px-6 py-3 bg-black text-white font-medium hover:bg-red-600 transition"
