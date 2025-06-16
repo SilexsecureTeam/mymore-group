@@ -129,12 +129,12 @@ export default function AboutBody() {
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                                     {team.map(member => (
                                         <div key={member.id} className="flex flex-col items-start text-center">
-                                            <div className="mb-4 w-full">
-                                                <img
+                                            <div className="mb-4 w-full bg-gray-200">
+{/*                                                 <img
                                                     src={member.img}
                                                     alt={member.name}
                                                     className="w-full h-full object-cover shadow-lg"
-                                                />
+                                                /> */}
                                             </div>
                                             <h3 className="text-lg font-bold text-[#000000]">{member.name}</h3>
                                             <p className="text-sm text-[#000000]">{member.role}</p>
