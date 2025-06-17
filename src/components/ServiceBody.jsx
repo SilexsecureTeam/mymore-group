@@ -20,8 +20,10 @@ export default function ServiceBody() {
             <div className="max-w-[60%]">
               <p className="font-semibold text-[15px]">Flight Bookings</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Find and book the best flight deals worldwide. Mymore Travels
+                offers competitive airfares from top airlines, with flexible
+                search tools and filters to help you choose the best route,
+                time, and price—fast.
               </p>
             </div>
           </div>
@@ -32,10 +34,12 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
+              <p className="font-semibold text-[15px]">Hotel Reservations</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Compare and book hotels that match your budget and style. From
+                luxury resorts to budget-friendly stays, Mymore Travels partners
+                with top hotel providers to offer thousands of options, all
+                bookable in minutes.
               </p>
             </div>
           </div>
@@ -46,10 +50,11 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
+              <p className="font-semibold text-[15px]">Tour Packages</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Curated tour packages for hassle-free adventures. Choose from
+                pre-designed or customizable tours that bundle flights, stays,
+                and activities. Perfect for solo travelers, couples, and groups.
               </p>
             </div>
           </div>
@@ -60,10 +65,11 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
+              <p className="font-semibold text-[15px]">Car Rentals</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Drive your destination with ease. Rent vehicles from trusted
+                providers in over 100 countries. Choose your car type, compare
+                prices, and book in just a few clicks.
               </p>
             </div>
           </div>
@@ -76,10 +82,11 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
+              <p className="font-semibold text-[15px]">Holiday Packages</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                All-inclusive vacations made simple. Get everything in one
+                package—flights, hotels, meals, and activities. Ideal for
+                stress-free travel planning at the best possible price.
               </p>
             </div>
           </div>
@@ -90,10 +97,14 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
+              <p className="font-semibold text-[15px]">
+                Travel Planning Support
+              </p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Smart tools and expert help for every trip. Use Mymore's
+                intelligent planning features to build your itinerary, manage
+                bookings, and get real-time travel updates—plus support when you
+                need it.
               </p>
             </div>
           </div>
@@ -104,24 +115,13 @@ export default function ServiceBody() {
               className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
             />
             <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
-              <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+              <p className="font-semibold text-[15px]">
+                Secure Online Payments
               </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-5">
-            <img
-              src={flight}
-              alt=""
-              className="border-[5px] border-[#EACECE] bg-white p-0.5 rounded-[50%] w-[30px]"
-            />
-            <div className="max-w-[60%]">
-              <p className="font-semibold text-[15px]">Flight Bookings</p>
               <p className="font-light text-sm">
-                Find and book affordable flights to your dream destinations with
-                flexible options and trusted airlines.
+                Fast, safe, and flexible payment options. Mymore Travels
+                supports multiple payment methods with advanced security, so you
+                can book confidently, wherever you are.
               </p>
             </div>
           </div>
