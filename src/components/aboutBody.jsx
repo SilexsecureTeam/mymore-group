@@ -1,6 +1,6 @@
 // === Image Assets ===
 import storyImg from "../assets/storyMan.png";
-import girl from "../assets/aboutbottom.svg";
+import girl from "../assets/aboutbottom.png";
 
 // === Partner Logos ===
 import patner1 from "../assets/p1.svg";
