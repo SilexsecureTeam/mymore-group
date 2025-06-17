@@ -22,7 +22,7 @@ export default function Header() {
           </NavLink>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center space-x-4 text-sm lg:space-x-16">
+          <nav className="hidden md:flex items-center space-x-4 text-sm lg:text-[15px] lg:space-x-16">
             <NavLink end to="/" className={linkClass}>
               Home
             </NavLink>
@@ -32,8 +32,11 @@ export default function Header() {
             <NavLink to="/services" className={linkClass}>
               Services
             </NavLink>
-            <NavLink to="/blog" className={linkClass}>
+            <NavLink to="#" className={linkClass}>
               Blog
+            </NavLink>
+            <NavLink to="/career" className={linkClass}>
+              Career
             </NavLink>
             <NavLink to="/contact" className={linkClass}>
               Contact Us
