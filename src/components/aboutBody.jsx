@@ -151,7 +151,8 @@ export default function AboutBody() {
 
               {/* Name Below Description */}
               <p className="pt-6 text-[#780000] font-semibold text-xl">
-                Ahmed Akande Msc. Air Transport Mgt
+                The CEO<br/>
+                Ahmed Akande]<br/> Msc. Air Transport Mgt
               </p>
             </div>
           </div>
