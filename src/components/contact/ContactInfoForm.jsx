@@ -17,20 +17,32 @@ const ContactInfoForm = () => {
         <LineDesign />
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <div>
-            <p className="font-medium text-red-700 pb-2">Call center</p>
-            <p>+234 8022 888 721</p>
-            <p>+234 8022 888 721</p>
+            <p className="font-medium text-red-900 pb-2">Call center</p>
+            <a className="hover:underline block" href="tel:+2348022888721">
+              +234 8022 888 721
+            </a>
+            <a className="hover:underline" href="tel:+2348022888721">
+              +234 8022 888 721
+            </a>
           </div>
           <div>
-            <p className="font-medium text-red-700 pb-2">Email Address</p>
-            <p>support@mymoretravels.com</p>
+            <p className="font-medium text-red-900 pb-2">Our Office</p>
+            <p>
+              Address: Suite A061, H & A Plaza,
+              <br /> Wuye Cres, Abuja 900271
+            </p>
           </div>
           <div>
-            <p className="font-medium text-red-700 pb-2">Our Office</p>
-            <p>Address: Suite A061, H & A Plaza, Wuye Cres, Abuja 900271</p>
+            <p className="font-medium text-red-900 pb-2">Email Address</p>
+            <a
+              className="hover:underline"
+              href="mailto:support@mymoretravels.com"
+            >
+              support@mymoretravels.com
+            </a>
           </div>
           <div>
-            <p className="font-medium text-red-700">Social Network</p>
+            <p className="font-medium text-red-900">Social Network</p>
             <div className="flex gap-4 text-xl mt-2">
               <a
                 href="https://facebook.com"
@@ -47,7 +59,7 @@ const ContactInfoForm = () => {
                 <FaXTwitter />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mymoretravels/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

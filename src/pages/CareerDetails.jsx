@@ -120,8 +120,21 @@ const CareerDetails = () => {
         <p className="pb-4 max-w-3xl ">
           Please submit your resume and a cover letter detailing your relevant
           experience and passion for the travel industry to:{" "}
-          <strong>support@mymoretravels.com</strong> and{" "}
-          <strong>mymoretravels@gmail.com</strong>
+          <a
+            target="_blank"
+            href="mailto:support@mymoretravels.com"
+            className="hover:!underline !font-bold"
+          >
+            support@mymoretravels.com
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            href="mymoretravels@gmail.com"
+            className="hover:!underline !font-bold"
+          >
+            mymoretravels@gmail.com
+          </a>
         </p>
         <p className="pt-2">
           <p>Applications close on June 30, 2025.</p>
