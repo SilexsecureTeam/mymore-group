@@ -1,22 +1,9 @@
-import { useState } from "react";
-import storyImg from "../assets/storyMan.svg";
 import patner1 from "../assets/p1.svg";
 import patner2 from "../assets/p2.png";
 import patner3 from "../assets/p3.png";
 import patner4 from "../assets/p4.png";
 import patner5 from "../assets/p5.png";
 import patner6 from "../assets/p6.png";
-import girl from "../assets/aboutbottom.svg";
-import offer1 from "../assets/offer1.png";
-import offer2 from "../assets/offer2.png";
-import offer3 from "../assets/offer3.png";
-import offer4 from "../assets/offer4.png";
-import offer5 from "../assets/offer5.png";
-import offer6 from "../assets/offer6.png";
-import offer7 from "../assets/offer7.png";
-import team1 from "../assets/team1.png";
-import team2 from "../assets/team2.png";
-import team3 from "../assets/team3.png";
 import flight from "../assets/flight.png";
 import Reviews from "./Reviews";
 export default function ServiceBody() {

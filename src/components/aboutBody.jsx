@@ -1,5 +1,5 @@
 // === Image Assets ===
-import storyImg from "../assets/storyMan.svg";
+import storyImg from "../assets/storyMan.png";
 import girl from "../assets/aboutbottom.svg";
 
 // === Partner Logos ===
@@ -95,58 +95,66 @@ export default function AboutBody() {
   return (
     <div>
       {/* Our Story Section */}
-      <section className="px-8 md:px-24 py-10 pb-20 bg-[#F0EFE7]">
-        <h1 className="text-[#780000] text-xl text-center mb-6 font-bold">
-          Our Story
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center gap-10 mt-8">
-          {/* Image Box with Border Highlights */}
-          <div className="relative w-86 mx-auto md:max-w-[350px] h-[350px] md:h-[450px] overflow-hidden">
-            {/* Overlayed Name Label */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white bg-opacity-90 text-center text-[#780000] text-xs md:text-sm lg:text-base font-semibold px-4 py-1.5 rounded-lg shadow-md z-10 max-w-40">
-              Ahmed Akande Msc. Air Transport Mgt
+      <section className="px-4 md:px-8 py-10 pb-20 bg-[#F0EFE7]">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-[#780000] text-xl text-center mb-6 font-bold">
+            Our Story
+          </h1>
+
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-y-10 gap-x-10 mt-8">
+            {/* Image Box */}
+            <div className="relative w-full md:w-[45%] max-w-[350px] h-[350px] md:h-[450px] overflow-hidden">
+              {/* Top-left "L" Decoration */}
+              <div className="absolute top-0 left-0 w-30 h-30 pointer-events-none">
+                <div className="absolute top-0 left-0 h-[22px] w-full bg-[#780000]" />
+                <div className="absolute top-0 left-0 w-[22px] h-full bg-[#780000]" />
+              </div>
+
+              {/* Bottom-right "L" Decoration */}
+              <div className="absolute bottom-0 right-0 w-30 h-30 pointer-events-none">
+                <div className="absolute bottom-0 right-0 h-[22px] w-full bg-[#780000]" />
+                <div className="absolute bottom-0 right-0 w-[22px] h-full bg-[#780000]" />
+              </div>
+
+              <img
+                src={storyImg}
+                alt="Our Story"
+                className="w-full h-full object-cover rounded"
+              />
             </div>
 
-            {/* Top-right "L" Decoration */}
-            <div className="absolute top-0 left-0 w-30 h-30 pointer-events-none">
-              <div className="absolute top-0 left-0 h-[22px] w-full bg-[#780000]" />
-              <div className="absolute top-0 left-0 w-[22px] h-full bg-[#780000]" />
-            </div>
+            {/* Description Text */}
+            <div className="w-[90%] md:w-[50%]">
+              <p className="text-[#0A0A0A] leading-[1.7rem]">
+                Mymore Travels Services Ltd is a registered company founded to
+                bridge the gap and eliminate inefficiencies in the global travel
+                industry.
+                <br />
+                <br />
+                We are a full-service travel company adopting digital platforms
+                for air travel and logistics, focusing on affordability,
+                customer satisfaction, and seamless delivery.
+                <br />
+                <br />
+                Our team consists of seasoned professionals skilled in both
+                corporate and personal travel management.
+                <br />
+                <br />
+                Using AMADEUS's online booking system, we deliver cutting-edge
+                services and up-to-date travel information.
+                <br />
+                <br />
+                Through partnerships and affiliations locally and globally, we
+                offer one-stop access to flights, hotels, visa assistance,
+                packages, transfers, travel SIMs, loyalty programs, and more.
+              </p>
 
-            {/* Bottom-left "L" Decoration */}
-            <div className="absolute bottom-0 right-0 w-30 h-30 pointer-events-none">
-              <div className="absolute bottom-0 right-0 h-[22px] w-full bg-[#780000]" />
-              <div className="absolute bottom-0 right-0 w-[22px] h-full bg-[#780000]" />
+              {/* Name Below Description */}
+              <p className="pt-6 text-[#780000] font-semibold text-xl">
+                Ahmed Akande Msc. Air Transport Mgt
+              </p>
             </div>
-
-            {/* Image */}
-            <img src={storyImg} alt="Our Story" className="w-full rounded" />
           </div>
-
-          {/* Description */}
-          <p className="md:max-w-[50%] text-[#0A0A0A] leading-[1.7rem]">
-            Mymore Travels Services Ltd is a registered company founded to
-            bridge the gap and eliminate inefficiencies in the global travel
-            industry.
-            <br />
-            <br />
-            We are a full-service travel company adopting digital platforms for
-            air travel and logistics, focusing on affordability, customer
-            satisfaction, and seamless delivery.
-            <br />
-            <br />
-            Our team consists of seasoned professionals skilled in both
-            corporate and personal travel management.
-            <br />
-            <br />
-            Using AMADEUS's online booking system, we deliver cutting-edge
-            services and up-to-date travel information.
-            <br />
-            <br />
-            Through partnerships and affiliations locally and globally, we offer
-            one-stop access to flights, hotels, visa assistance, packages,
-            transfers, travel SIMs, loyalty programs, and more.
-          </p>
         </div>
       </section>
 
