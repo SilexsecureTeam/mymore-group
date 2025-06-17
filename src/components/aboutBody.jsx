@@ -190,7 +190,7 @@ export default function AboutBody() {
       <div className="w-full h-96" 
         style={{
     backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(179, 0, 0, 0.7)), url(${girl})`,
-          backgroundPosition: "center",
+          backgroundPosition: "top center",
           backgroundSize: "cover",
           backgroudRepeat:"no-repeat"
   }} />
