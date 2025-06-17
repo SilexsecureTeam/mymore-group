@@ -105,32 +105,4 @@ The CSO handles various aspects of customer interaction, from booking and modify
     summary: `The Business Development Officer will be responsible for business growth functions, the officer oversees the operations of our newly launched website – www.flightandticketing.com, customer service unit, including the supervision of email responses, whatsapp/chatbox interactions, and customer follow-ups. 
 The role reports directly to the CEO and holds the responsibility of issuing flight tickets after confirmation is received. Identifying growth opportunities, building strategic partnerships, expanding the company’s customer base, through innovative marketing tactics. `,
   },
-  {
-    id: 3,
-    title: "Marketing Specialist",
-    location: "Lagos",
-    type: "Remote",
-    attribute:
-      "Creative, data-driven, and passionate about travel and tourism marketing.",
-    responsibilities: [
-      "Develop and implement marketing strategies to promote travel services.",
-      "Create engaging content for social media, blogs, and email campaigns.",
-      "Analyze market trends and customer feedback to refine marketing approaches.",
-      "Collaborate with the sales team to align marketing efforts with business goals.",
-      "Manage online advertising campaigns and track their performance.",
-      "Build and maintain relationships with travel influencers and partners.",
-      "Monitor and report on the effectiveness of marketing campaigns.",
-      "Stay updated on industry trends and competitor activities.",
-    ],
-    requirements: [
-      "Bachelor's degree in Marketing, Communications, or a related field.",
-      "Proven experience in digital marketing, preferably in the travel industry.",
-      "Strong understanding of social media platforms and online marketing tools.",
-      "Excellent written and verbal communication skills.",
-      "Creative mindset with the ability to generate innovative marketing ideas.",
-      "Analytical skills to assess campaign performance and make data-driven decisions.",
-      "Ability to work independently and as part of a team.",
-      "Familiarity with SEO, SEM, and content marketing strategies.",
-    ],
-  },
 ];
