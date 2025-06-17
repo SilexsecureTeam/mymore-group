@@ -1,9 +1,9 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Sketch&family=Monoton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import "tailwindcss";
 :root {
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   line-height: 1.5;
   font-size: 14.5px;
   font-weight: 400;
@@ -13,9 +13,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Style the entire website's scrollbar */
+::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scrollbar */
+  height: 0px; /* Set the height for horizontal scrollbar (if any) */
+}
 
-.fontPoppins{
-  font-family: 'Poppins' !important;
+/* Style the track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #dddddd; /* Light gray track color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: darkred; /* Dark gray thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* Style the thumb when it's being hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(51, 3, 3); /* Darker color when hovered */
+}
+
+/* Optional: Style for the corner where the vertical and horizontal scrollbars meet */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.fontPoppins {
+  font-family: "Poppins" !important;
 }
 
 a {
@@ -23,7 +50,6 @@ a {
   text-decoration: inherit;
   cursor: pointer;
 }
-
 
 p,
 h1,
@@ -37,11 +63,11 @@ h6 {
 
 body {
   margin: 0;
-  background-color: #100E0E;
-  color: #4D4D4D;
+  background-color: #100e0e;
+  color: #4d4d4d;
   font-size: 15px;
   overflow-x: hidden !important;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
 button {
@@ -50,7 +76,7 @@ button {
   border: 0;
 }
 
-button:disabled{
+button:disabled {
   cursor: not-allowed;
 }
 
@@ -58,10 +84,17 @@ button:focus,
 button:focus-visible {
   outline: none;
 }
-select, input, select:focus, select:focus-visible, textarea, textarea:focus{
+select,
+input,
+select:focus,
+select:focus-visible,
+textarea,
+textarea:focus {
   outline: none;
 }
-select, select:focus, select:focus-visible{
+select,
+select:focus,
+select:focus-visible {
   cursor: pointer;
 }
 
@@ -77,51 +110,46 @@ select, select:focus, select:focus-visible{
 }
 
 .bg-first {
-  background-image: url('./assets/firstHero.png');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
+  background-image: url("./assets/firstHero.png");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-hotelBig{
-  background-image: url('./assets/hotelBig.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
+.bg-hotelBig {
+  background-image: url("./assets/hotelBig.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-hero{
-  background-image: url('./assets/hero.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
+.bg-hero {
+  background-image: url("./assets/hero.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-heroabout{
-  background-image: url('./assets/about.svg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
+.bg-heroabout {
+  background-image: url("./assets/about.svg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-heroservice{
-  background-image: url('./assets/services.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
+.bg-heroservice {
+  background-image: url("./assets/services.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-herocareer{
-  background-image: url('./assets/career.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center top;  /* Centers the image */
+
+.bg-romance {
+  background-image: url("./assets/romance.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
-.bg-romance{
-  background-image: url('./assets/romance.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating */
-}
-.bg-table{
-  background-image: url('./assets/bg-table.jpg');
-  background-size: cover;  /* Ensures the image covers the entire element */
-  background-position: center bottom;  /* Centers the image */
+.bg-table {
+  background-image: url("./assets/bg-table.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center bottom; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
 }
 
@@ -144,4 +172,3 @@ select, select:focus, select:focus-visible{
   width: max-content;
   animation: scrollX 30s linear infinite;
 }
-

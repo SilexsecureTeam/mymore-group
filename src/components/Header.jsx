@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,8 +9,8 @@ export default function Header() {
   // Helper to apply active styles
   const linkClass = ({ isActive }) =>
     isActive
-      ? 'drop-shadow-[0px_0px_8px_rgb(255,255,255)] !font-bold'
-      : 'text-white hover:drop-shadow-[0px_0px_8px_rgb(255,255,255)] font-medium';
+      ? "drop-shadow-[0px_0px_8px_rgb(255,255,255)] !font-bold"
+      : "text-white hover:drop-shadow-[0px_0px_8px_rgb(255,255,255)] font-medium";
 
   return (
     <>
@@ -22,18 +22,30 @@ export default function Header() {
           </NavLink>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center space-x-16">
-            <NavLink end to="/" className={linkClass}>Home</NavLink>
-            <NavLink to="/about" className={linkClass}>About Us</NavLink>
-            <NavLink to="/services" className={linkClass}>Services</NavLink>
-            <NavLink to="/blog" className={linkClass}>Blog</NavLink>
-            <NavLink to="/contact" className={linkClass}>Contact Us</NavLink>
+          <nav className="hidden md:flex items-center space-x-4 text-sm lg:space-x-16">
+            <NavLink end to="/" className={linkClass}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={linkClass}>
+              About Us
+            </NavLink>
+            <NavLink to="/services" className={linkClass}>
+              Services
+            </NavLink>
+            <NavLink to="/blog" className={linkClass}>
+              Blog
+            </NavLink>
+            <NavLink to="/contact" className={linkClass}>
+              Contact Us
+            </NavLink>
           </nav>
 
           {/* Book button */}
           <div className="hidden md:block bg-gradient-to-r from-red-400 to-white p-[1px] rounded hover:bg-gradient-to-l">
             <div className="bg-black px-4 py-2 rounded font-bold">
-              <NavLink to="https://flightandticketing.com/" className="block">Book Flight Now</NavLink>
+              <NavLink to="https://flightandticketing.com/" className="block">
+                Book Flight Now
+              </NavLink>
             </div>
           </div>
 
@@ -50,9 +62,13 @@ export default function Header() {
 
       {/* Mobile slide-in menu */}
       <aside
-        className={`fixed md:hidden top-0 right-0 h-full w-64 bg-black z-[200] transform transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? 'translate-x-0' : '-translate-x-[300%]'
-        }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-black z-[200] transition-transform duration-300 ease-in-out md:hidden
+    ${
+      mobileMenuOpen
+        ? "translate-x-0 opacity-100 pointer-events-auto"
+        : "translate-x-full opacity-0 pointer-events-none"
+    }
+  `}
       >
         <div className="flex items-center justify-end px-6 py-4 h-30 border-b border-gray-700">
           {/* <NavLink to="/" className="flex items-center space-x-2">
