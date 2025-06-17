@@ -45,51 +45,102 @@ const CareerDetails = () => {
         <Section title="Qualifications">
           <ul className="list-disc pl-5">
             <li>
-              Bachelor’s degree or Higher Diploma in travel, tourism,
+              Education: Bachelor’s degree or Higher Diploma in travel, tourism,
               hospitality, or a related field.
             </li>
             <li>
-              Minimum of one (1) year in a travel agency, airline, or
-              customer-facing role.
+              Experience: Minimum of one (2) year in a travel agency, airline,
+              or customer-facing role.
             </li>
           </ul>
         </Section>
 
         <Section title="Key Responsibilities">
-          <ol className="list-decimal pl-5 space-y-4">
-            <li>
-              <strong>Client interaction and support:</strong>
-              <ul className="list-disc pl-6">
-                <li>Respond to inquiries via phone, email, WhatsApp...</li>
-                <li>Provide flight and travel route information</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Flight booking management:</strong>
-              <ul className="list-disc pl-6">
-                <li>Track client transactions</li>
-                <li>Coordinate with airlines</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Customer Relationship Management:</strong>
-              <ul className="list-disc pl-6">
-                <li>Ensure repeat business and satisfaction assessment</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Record Keeping and Reporting:</strong> Maintain accurate
-              records of bookings
-            </li>
-            <li>
-              <strong>Team collaboration:</strong> Align with business
-              development and branding
-            </li>
-            <li>
-              <strong>Service Excellence:</strong> Stay updated on policies and
-              guidelines
-            </li>
-          </ol>
+          {jobDetails?.responsibilities ? (
+            <ul className="list-disc pl-5 space-y-4">
+              {jobDetails.responsibilities.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
+              ))}
+            </ul>
+          ) : (
+            <ol className="list-decimal pl-5 space-y-4">
+              <li>
+                <strong>Client interaction and support:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    Respond to customer inquiries via phone, email, whatsapp,
+                    company chat box and in person.
+                  </li>
+                  <li>
+                    Provide detailed information on available flights, pricing,
+                    travel routes, and airline policies when needed.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Flight booking management:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    Routine monitoring of the Admin board to track clients
+                    transactions on the company website
+                  </li>
+                  <li>
+                    Confirmation of payment on Alat Pay dashboard or paystack
+                    transfer.
+                  </li>
+                  <li>Modify itineraries and process cancellations.</li>
+                  <li>
+                    Coordinate with airlines on flight delays, cancellations,
+                    and other client concerns.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Customer Relationship Management:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    Build and maintain positive relationships with clients to
+                    ensure repeat business
+                  </li>
+                  <li>
+                    Follow up with clients post travel for feedback and
+                    satisfaction assessment.
+                  </li>
+                  <li>
+                    Handle complaints or disputes calmly and professionally.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Record Keeping and Reporting:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    Maintain accurate and up to date records of bookings, client
+                    interactions and service log.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Team collaboration:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    {" "}
+                    Work closely with the Business development and brand service
+                    team to align on promotions and updates.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Service Excellence:</strong>
+                <ul className="list-disc pl-6">
+                  <li>
+                    Stay updated on industry trends, airline policies, and new
+                    travel guidelines.{" "}
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          )}
         </Section>
 
         <section>
@@ -97,21 +148,15 @@ const CareerDetails = () => {
             Key Skills & Requirements
           </h2>
           <ul className="list-disc pl-5 text-sm md:text-base space-y-2">
-            <li>Excellent understanding of the travel industry</li>
-            <li>
-              Proficient in Amadeus, Sabre, Galileo etc. (training provided)
-            </li>
-            <li>Strong communication and negotiation skills</li>
-            <li>Customer service and multitasking ability</li>
+            {jobDetails?.requirements?.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
           </ul>
         </section>
 
         <section className="text-sm md:text-base">
           <h2 className="font-semibold mb-2">Attributes</h2>
-          <p>
-            Detail-oriented, empathetic, and passionate about creating memorable
-            travel experiences.
-          </p>
+          <p>{jobDetails?.attribute}</p>
         </section>
       </div>
       {/* How to Apply */}
