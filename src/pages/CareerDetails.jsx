@@ -14,7 +14,7 @@ const CareerDetails = () => {
       <Header />
       {/* Hero Section */}
       <div
-        className="w-full h-[450px] bg-cover bg-center relative flex items-center"
+        className="w-full h-[450px] mt-24 bg-cover bg-center relative flex items-center"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(10,10,10,0.7), rgba(10,10,10,0.3)), url(${heroImg})`,
         }}
