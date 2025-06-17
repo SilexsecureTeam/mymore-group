@@ -36,76 +36,6 @@ const whyWorkItems = [
 const BLOCK = 4;
 const pageCount = Math.ceil(whyWorkItems.length / BLOCK);
 
-const trustFeatures = [
-  {
-    title: "Fast & Secure Flight Booking",
-    icon: Zap,
-    bg: "bg-[#97060B] text-white",
-  },
-  {
-    title: "Expert Travel Support",
-    icon: Headphones,
-    bg: "bg-[#D9D9D9] text-black",
-  },
-  {
-    title: "Secure Payment",
-    icon: CreditCard,
-    bg: "bg-[#97060B] text-white",
-  },
-  {
-    title: "Comprehensive Travel Solutions",
-    icon: Globe,
-    bg: "bg-[#D9D9D9] text-black",
-  },
-];
-
-const hotels = [
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel1 },
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel2 },
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel3 },
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel4 },
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel5 },
-  { title: "Radisson Blu, Capetown", price: "From N65,000/night", img: hotel6 },
-];
-
-const reviews = [
-  {
-    id: 1,
-    name: "Nathan Adebayo",
-    location: "Abuja, Nigeria",
-    avatar: "https://i.pravatar.cc/48?img=5",
-    text: `Mymore Travels made my honeymoon stress-free and unforgettable! From flights to hotel bookings, everything was perfectly arranged. We'll definitely be booking our next trip with them.`,
-    image: "/images/honeymoon.jpg",
-  },
-  {
-    id: 2,
-    name: "Olivia Adebayo",
-    location: "Abuja, Nigeria",
-    avatar: "https://i.pravatar.cc/48?img=6",
-    text: `Booking with Mymore Travels was the best decision. Their customer support was responsive and the hotel deal we got in Dubai was unbeatable. Highly recommend for anyone planning a getaway!`,
-    image: "/images/dubai.jpg",
-  },
-  {
-    id: 3,
-    name: "Olivia Adebayo",
-    location: "Abuja, Nigeria",
-    avatar: "https://i.pravatar.cc/48?img=6",
-    text: `Booking with Mymore Travels was the best decision. Their customer support was responsive and the hotel deal we got in Dubai was unbeatable. Highly recommend for anyone planning a getaway!`,
-    image: "/images/dubai.jpg",
-  },
-  {
-    id: 4,
-    name: "Nathan Adebayo",
-    location: "Abuja, Nigeria",
-    avatar: "https://i.pravatar.cc/48?img=5",
-    text: `Mymore Travels made my honeymoon stress-free and unforgettable! From flights to hotel bookings, everything was perfectly arranged. We'll definitely be booking our next trip with them.`,
-    image: "/images/honeymoon.jpg",
-  },
-  // Add more reviews as needed
-];
-
-const REVIEWS_PER_PAGE = 2;
-
 export default function CareerBody() {
   const navigate = useNavigate();
   const [whyIndex, setWhyIndex] = useState(0);
@@ -170,7 +100,7 @@ export default function CareerBody() {
                 key={job.id}
                 onClick={() => navigate(`/career/${job.title}`, { state: job })}
                 className={`
-                              flex flex-col h-full transition-transform
+                              flex flex-col h-full transition-transform cursor-pointer
                               ${
                                 idx === openIndex
                                   ? "scale-100 bg-[#780000] text-white"
