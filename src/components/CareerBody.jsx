@@ -98,7 +98,11 @@ export default function CareerBody() {
             {openings.map((job, idx) => (
               <div
                 key={job.id}
-                onClick={() => navigate(`/career/${job.title}`, { state: job })}
+                onClick={() =>
+                  navigate(`/career/${job.title?.replaceAll(" ", "-")}`, {
+                    state: job,
+                  })
+                }
                 className={`
                               flex flex-col h-full transition-transform cursor-pointer
                               ${

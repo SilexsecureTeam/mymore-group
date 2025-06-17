@@ -3,10 +3,9 @@ import heroImg from "../assets/customer.jpg"; // Replace with your image path
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LineDesign from "../components/LineDesign";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const CareerDetails = () => {
-  const { label } = useParams();
   const location = useLocation();
   const jobDetails = location.state;
   return (
@@ -14,14 +13,14 @@ const CareerDetails = () => {
       <Header />
       {/* Hero Section */}
       <div
-        className="w-full h-[450px] mt-24 bg-cover bg-center relative flex items-center"
+        className="w-full h-[450px] mt-24 bg-cover bg-top relative flex items-center"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(10,10,10,0.7), rgba(10,10,10,0.3)), url(${heroImg})`,
         }}
       >
         <div className="px-8 md:px-24 text-white">
-          <h1 className="max-w-[350px] text-3xl md:text-5xl font-bold pb-2">
-            {label}
+          <h1 className="max-w-[420px] text-3xl md:text-5xl font-bold pb-2">
+            {jobDetails?.title || "Customer Service Executive"}
           </h1>
           <p className="text-sm md:text-base">
             Employment Type: {jobDetails?.type || "Full-time"}
