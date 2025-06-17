@@ -109,11 +109,18 @@ export default function Header() {
             Services
           </NavLink>
           <NavLink
-            to="/blog"
+            to="#"
             className={linkClass}
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
+          </NavLink>
+          <NavLink
+            to="/career"
+            className={linkClass}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Career
           </NavLink>
           <NavLink
             to="/contact"
