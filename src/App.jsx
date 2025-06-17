@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Career2 from "./pages/Career2";
+import CareerDetails from "./pages/CareerDetails";
 
 // ScrollToTop logic directly in App.jsx
 function ScrollToTop() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/career/:label" element={<CareerDetails />} />
         <Route path="/career2" element={<Career2 />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
