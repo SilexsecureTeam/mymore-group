@@ -98,9 +98,6 @@ export default function TrustSection() {
   };
 
   const startIdx = page * REVIEWS_PER_PAGE;
-  const currentReviews = reviews.slice(startIdx, startIdx + REVIEWS_PER_PAGE);
-  const currentImage = reviews[startIdx]?.image;
-
   return (
     <div>
       <section className="bg-black text-white">
@@ -163,7 +160,7 @@ export default function TrustSection() {
                   {hotel.title}
                 </h4>
                 <p className="text-gray-300 text-sm italic font-normal">
-                  {hotel.price}
+                  Explore More...
                 </p>
               </div>
             </div>
