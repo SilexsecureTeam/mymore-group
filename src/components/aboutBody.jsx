@@ -187,9 +187,10 @@ export default function AboutBody() {
       </section>
 
       {/* Divider Image */}
-      <div className="w-full">
-        <img src={girl} alt="" className="w-full" />
-      </div>
+      <div className="w-full h-96" 
+        style={{
+    backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(179, 0, 0, 0.7)), url(${girl})`,
+  }} />
 
       {/* What We Offer */}
       <section className="w-full mx-auto py-12 space-y-16">
